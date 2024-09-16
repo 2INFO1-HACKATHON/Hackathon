@@ -2,11 +2,8 @@
 <template>
   <div class="container">
     <div class="header">
-      <a href="../views/PaginaInicio.vue"> <img src="../assets/imagens/logo.png" alt=""></a>
-      <a href=""> </a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+      <RouterLink to="/"> <img src="../assets/imagens/logo.png" alt=""></RouterLink>
+     
     </div>
   </div>
 </template>
