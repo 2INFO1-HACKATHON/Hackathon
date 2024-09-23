@@ -1,5 +1,5 @@
 <script setup></script>
 <template>
-    <RouterView/>
+    <PaginaInicio/>
 </template>
 <style scoped></style>
