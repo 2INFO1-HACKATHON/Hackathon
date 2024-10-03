@@ -18,17 +18,17 @@
                 <p class="description description-second">Use seu email para se registrar:</p>
                 <form class="form">
                     <label class="label-input" for="">
-                      <font-awesome-icon icon="user" />
+                       <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Name">
                     </label>
                     
                     <label class="label-input" for="">
-                      <font-awesome-icon icon="envelope" />
+                        <i class="fa-solid fa-envelope"></i>
                         <input type="email" placeholder="Email">
                     </label>
                     
-                    <label class="label-input" for="">
-                      <font-awesome-icon icon="lock" />
+                    <label class="label-input" for=""> 
+                        <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Password">
                     </label>
                     
@@ -37,33 +37,7 @@
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
-        <div class="content second-content">
-            <div class="first-column">
-                <h2 class="title title-primary">Bem Vindo!</h2>
-                <p class="description description-primary">Enter your personal details</p>
-                <p class="description description-primary">and start journey with us</p>
-                <button id="signup" class="btn btn-primary">sign up</button>
-            </div>
-            <div class="second-column">
-                <h2 class="title title-second">Conectar-se</h2>
-                <p class="description description-second">or use your email account:</p>
-                <form class="form">
-                
-                    <label class="label-input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
-                    </label>
-                
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Password">
-                    </label>
-                
-                    <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-second">Entrar</button>
-                </form>
-            </div><!-- second column -->
-        </div><!-- second-content -->
+      
     </div>
 </template>
 
@@ -79,9 +53,11 @@ body {
 }
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: #ecf0f1;
 }
 .content {
@@ -225,360 +201,17 @@ input:-webkit-autofill
     align-items: center;
     margin: 8px;
 }
+fas-label{
+    color: #000;
+    
+}
+
 .icon-modify {
     color: #7f8c8d;
     padding: 0 5px;
 }
 
-/* second content*/
-
-.second-content {
-    position: absolute;
-    display: flex;
-}
-.second-content .first-column {
-    order: 2;
-    z-index: -1;
-}
-.second-content .second-column {
-    order: 1;
-    z-index: -1;
-}
-.password {
-    color: #34495e;
-    font-size: 14px;
-    margin: 15px 0;
-    text-align: center;
-}
-.password::first-letter {
-    text-transform: capitalize;
-}
 
 
-
-.sign-in-js .first-content .first-column {
-    z-index: -1;
-}
-
-.sign-in-js .second-content .second-column {
-    z-index: 11;
-}
-.sign-in-js .second-content .first-column {
-    z-index: 13;
-}
-
-.sign-in-js .content::before {
-    left: 60%;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; 
-
-    z-index: 12;
-}
-
-.sign-up-js .content::before {
-    animation: slideout 1.3s;
-
-    z-index: 12;
-}
-
-.sign-up-js .second-content .first-column,
-.sign-up-js .second-content .second-column {
-    z-index: -1;
-}
-
-.sign-up-js .first-content .second-column {
-    z-index: 11;
-}
-
-.sign-up-js .first-content .first-column {
-    z-index: 13;    
-}
-
-
-
-.sign-in-js .first-content .second-column {
-
-    z-index: -1;
-    position: relative;
-    animation: deslocamentoEsq 1.3s; 
-}
-
-.sign-up-js .second-content .second-column {
-    position: relative;
-    z-index: -1;
-    animation: deslocamentoDir 1.3s;
-}
-
-
-
-@keyframes deslocamentoEsq {
-
-    from {
-        left: 0;
-        opacity: 1;
-        z-index: 12;
-    }
-
-    25% {
-        left: -80px;
-        opacity: .5;
-      
-    }
-
-    50% {
-        left: -100px;
-        opacity: .2;
-      
-    }
-
-    to {
-        left: -110px;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-
-
-@keyframes deslocamentoDir {
-
-    from {
-        left: 0;
-        z-index: 12;
-    }
-
-    25% {
-        left: 80px;
-
-    }
-
-    50% {
-        left: 100px;
-
-    }
-
-    to {
-        left: 110px;
-        z-index: -1;
-    }
-}
-
-
-
-
-@keyframes slidein {
-
-    from {
-        left: 0;
-        width: 40%;
-    }
-
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
-        width: 50%;
-    }
-
-    to {
-        left: 60%;
-        width: 40%;
-    }
-}
-
-@keyframes slideout {
-
-    from {
-        left: 60%;
-        width: 40%;
-    }
-
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
-    }
-
-    to {
-        left: 0;
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 1040px) {
-    .content {
-        width: 100%;
-        height: 100%;
-    }
-
-    .content::before {
-        width: 100%;
-        height: 40%;
-        top: 0;
-        border-radius: 0;
-    }
-    .first-content, .second-content {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .first-column, .second-column {
-        width: 100%;
-    }
-    
-    .sign-in-js .content::before {
-        top: 60%;
-        left: 0;
-        border-radius: 0;
-
-    }
-
-    .form {
-        width: 90%;
-    }
-    
- 
-
-    @keyframes deslocamentoEsq {
-
-        from {
-            top: 0;
-            opacity: 1;
-            z-index: 12;
-        }
-    
-        25% {
-            top: -80px;
-            opacity: .5;
-          
-        }
-    
-        50% {
-            top: -100px;
-            opacity: .2;
-          
-        }
-    
-        to {
-            top: -110px;
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-    
-    
-    @keyframes deslocamentoDir {
-    
-        from {
-            top: 0;
-            z-index: 12;
-        }
-    
-        25% {
-            top: 80px;
-   
-        }
-    
-        50% {
-            top: 100px;
-           
-        }
-    
-        to {
-            top: 110px;
-            z-index: -1;
-        }
-    }
-    
-    
-    
-    @keyframes slidein {
-    
-        from {
-            top: 0;
-            height: 40%;
-        }
-    
-        25% {
-            top: 5%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 45%;
-            height: 50%;
-        }
-    
-        to {
-            top: 60%;
-            height: 40%;
-        }
-    }
-    
-    @keyframes slideout {
-    
-        from {
-            top: 60%;
-            height: 40%;
-        }
-    
-        25% {
-            top: 45%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 5%;
-            height: 50%;
-        }
-    
-        to {
-            top: 0;
-            height: 40%;
-        }
-    }
-   
-}
-
-@media screen and (max-width: 740px) {
-    .form {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .form {
-        width: 100%;
-    }
-}
 
 </style>
