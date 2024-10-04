@@ -11,17 +11,17 @@ import Footer from '@/assets/components/Footer.vue';
 
 
   <div class="container">
+    <img src="../assets/imagens/imagemhome.png" alt="background">
     <header>
       <Menu></Menu>
     </header>
 
     <div class="main">
-      <h1>FixTudo</h1>
+      <h1>FixTudo</h1>    
       <h2>Sua casa em boas mãos</h2>
       <p>Manutenção e cuidado com carinho</p>
 
     </div>
-
 
 
     <div class="sobrenos">
@@ -150,7 +150,6 @@ import Footer from '@/assets/components/Footer.vue';
 
 
 .services-container {
-  font-family: sans-serif;
   text-align: center;
   background-color: white;
 }
@@ -289,13 +288,17 @@ button {
 
 }
 
-.intera {
+.intera{
   display: flex;
   height: 800px;
   align-items: center;
   justify-content: center;
   gap: 8vw;
   background-color: white;
+}
+
+.intera h2{
+  font-weight: bold;
 }
 
 
@@ -310,6 +313,11 @@ button {
 
 .left-side h2 {
   color: #00626d;
+}
+
+.left-side h4{
+  letter-spacing: 7px;
+  font-weight: 400;
 }
 
 .right-side {
@@ -345,12 +353,13 @@ button {
 
 .cta-button {
   background-color: rgb(150, 151, 150);
-  color: white;
-  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  width: 10vw;
+  width: 13vw;
+  font-weight: 600;
 
 }
 
@@ -358,6 +367,7 @@ button {
 
 .small-text {
   font-size: 12px;
-  color: #888;
+  color: #020202;
+  font-weight: 600;
 }
 </style>
