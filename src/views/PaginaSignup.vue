@@ -1,7 +1,5 @@
 <script setup>
 
-
-
 </script>
 
 <template>
@@ -17,20 +15,21 @@
                 <h2 class="title title-second">Criar Conta</h2>
                 <p class="description description-second">Use seu email para se registrar:</p>
                 <form class="form">
-                    <label class="label-input" for="">
-                       <i class="fa-solid fa-user"></i>
+
+                    <div class="label-input">
+                       <i class="fa-solid fa-user input-icon"></i>
                         <input type="text" placeholder="Name">
-                    </label>
+                    </div>
                     
-                    <label class="label-input" for="">
-                        <i class="fa-solid fa-envelope"></i>
+                    <div class="label-input" >
+                        <i class="fa-solid fa-envelope input-icon"></i>
                         <input type="email" placeholder="Email">
-                    </label>
+                    </div>
                     
-                    <label class="label-input" for=""> 
-                        <i class="fa-solid fa-lock"></i>
+                    <div class="label-input" > 
+                        <i class="fa-solid fa-lock input-icon"></i>
                         <input type="password" placeholder="Password">
-                    </label>
+                    </div>
                     
                     
                     <button class="btn btn-second">Conectar</button>        
@@ -195,12 +194,7 @@ input:-webkit-autofill
     -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
     -webkit-text-fill-color: #000 !important;
 }
-.label-input {
-    background-color: #ecf0f1;
-    display: flex;
-    align-items: center;
-    margin: 8px;
-}
+
 fas-label{
     color: #000;
     
@@ -211,6 +205,27 @@ fas-label{
     padding: 0 5px;
 }
 
+.label-input {
+    position: relative;
+    background-color: rgb(250, 250, 250) ;
+    padding-bottom: 9px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    & input {
+        padding-left: 40px;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    z-index: 999;
+
+    }
 
 
 
