@@ -11,7 +11,6 @@ import Footer from '@/assets/components/Footer.vue';
 
 
   <div class="container">
-    <img src="../assets/imagens/imagemhome.png" alt="background">
     <header>
       <Menu></Menu>
     </header>
@@ -20,7 +19,10 @@ import Footer from '@/assets/components/Footer.vue';
       <h1>FixTudo</h1>    
       <h2>Sua casa em boas mãos</h2>
       <p>Manutenção e cuidado com carinho</p>
-
+      
+    </div>
+    <div class="imagem-home">
+      <img src="../assets/imagens/imagemhome.png" alt="">
     </div>
 
 
@@ -257,6 +259,15 @@ button {
 
 .main p {
   color: #666;
+
+}
+
+.imagem-home img{
+  height: 600px;
+  width: 600px;
+  margin-left: 899px;
+  margin-bottom: 10px;
+  display: flex;  
 
 }
 
