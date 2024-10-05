@@ -1,50 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import PaginaInicio from '../views/PaginaInicio.vue'
-import PaginaCuidados from '../views/PaginaCuidados.vue'
-import PaginaCulinaria from '../views/PaginaCulinaria.vue'
-import PaginaLimpeza from '../views/PaginaLimpeza.vue'
-import PaginaLogin from '../views/PaginaLogin.vue'
-import PaginaSignup from '../views/PaginaSignup.vue'
-import PaginaManutencao from '../views/PaginaManutencao.vue'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'PaginaInicio',
-      component: PaginaInicio
+      name: 'home',
+      component: HomeView
     },
     {
-      path: '/PaginaCuidados',
-      name: 'PaginaCuidados',
-      component: PaginaCuidados
-    },
-    {
-      path: '/PaginaCulinaria',
-      name: 'PaginaCulinaria',
-      component: PaginaCulinaria
-    },
-    {
-      path: '/PaginaLimpeza',
-      name: 'PaginaLimpeza',
-      component: PaginaLimpeza
-    },
-    {
-      path: '/PaginaLogin',
-      name: 'PaginaLogin',
-      component: PaginaLogin
-    },
-    {
-      path: '/PaginaSignup',
-      name: 'PaginaSignup',
-      component: PaginaSignup
-    },
-
-    {
-      path: '/PaginaManutencao',
-      name: 'PaginaManutencao',
-      component: PaginaManutencao
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AboutView.vue')
     }
   ]
 })

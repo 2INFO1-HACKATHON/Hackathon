@@ -1,3 +1,4 @@
+
 <script setup>
 import Menu from '@/assets/components/Menu.vue';
 import Footer from '@/assets/components/Footer.vue';
@@ -293,3 +294,4 @@ header {
     cursor: pointer;
 }
 </style>
+
