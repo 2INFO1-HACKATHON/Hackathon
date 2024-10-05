@@ -139,7 +139,7 @@ import Footer from '@/assets/components/Footer.vue';
       
     <Footer></Footer>
 
-
+</div>
   </div>
 </template>
 

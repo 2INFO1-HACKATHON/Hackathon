@@ -2,7 +2,7 @@
 
 import { ref } from 'vue'
 const open = ref(false)
-const servicos = ref('Serviços')
+
 
 
 function Dropdown() {
