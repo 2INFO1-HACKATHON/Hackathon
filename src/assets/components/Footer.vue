@@ -4,8 +4,9 @@
       <div class="flex flex-wrap justify-between">
         <div class="w-full md:w-12">
           <h1 class="text-dark text-3xl font-bold">
-            FixTudo <span><img src="../assets/imagens/logo.png" alt="" /></span>
+            FixTudo 
           </h1>
+          
           <p class="text-dark text-lg">Especialistas em resolver seus problemas.</p>
           <ul class="flex justify-start">
             <li class="mr-4">
