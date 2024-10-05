@@ -11,6 +11,7 @@ import Footer from '@/assets/components/Footer.vue';
 
 
   <div class="container">
+
     <header>
       <Menu></Menu>
     </header>
@@ -135,7 +136,7 @@ import Footer from '@/assets/components/Footer.vue';
           <a href="#" class="service-link">→</a>
         </div>
       </div>
-    </div>
+      
     <Footer></Footer>
 
 
