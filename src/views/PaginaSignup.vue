@@ -18,17 +18,16 @@
                 <form class="form">
 
                     <div class="label-input">
-                       <i class="fa-solid fa-user input-icon"></i>
+                      
                         <input type="text" placeholder="Name">
                     </div>
                     
                     <div class="label-input" >
-                        <i class="fa-solid fa-envelope input-icon"></i>
-                        <input type="email" placeholder="Email">
+                         <input type="email" placeholder="Email">
                     </div>
                     
                     <div class="label-input" > 
-                        <i class="fa-solid fa-lock input-icon"></i>
+                        
                         <input type="password" placeholder="Password">
                     </div>
                     
@@ -42,15 +41,13 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+
 .container {
     display: flex;
     flex-direction: column;

@@ -7,15 +7,9 @@
             FixTudo 
           </h1>
           
+          
           <p class="text-dark text-lg">Especialistas em resolver seus problemas.</p>
-          <ul class="flex justify-start">
-            <li class="mr-4">
-              <a href="#"><i class="fab fa-facebook-f fa-2x text-dark"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram fa-2x text-dark"></i></a>
-            </li>
-          </ul>
+         
         </div>
         <div class="w-full md:w-1/2 text-right">
           <h3 class="text-uppercase font-bold text-lg">Nossos Contatos</h3>
@@ -39,9 +33,7 @@
   background-color: #b2e6ce;
 }
 
-.text-dark {
-  color: #333;
-}
+
 
 .py-4 {
   padding-top: 1rem;

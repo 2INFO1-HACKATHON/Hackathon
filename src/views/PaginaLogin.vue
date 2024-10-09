@@ -15,12 +15,12 @@
                 <form class="form">
                 
                     <label class="label-input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
+                        
                         <input type="email" placeholder="Email">
                     </label>
                 
                     <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
+                        
                         <input type="password" placeholder="Password">
                     </label>
                 

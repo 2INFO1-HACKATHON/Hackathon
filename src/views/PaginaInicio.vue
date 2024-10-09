@@ -1,27 +1,18 @@
-
 <script setup>
-
-
-import Menu from '@/assets/components/Menu.vue';
-import Footer from '@/assets/components/Footer.vue';
-
-
-
+import Menu from '@/components/Menu.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 <template>
-
-
   <div class="container">
-
     <header>
       <Menu></Menu>
     </header>
 
     <div class="main">
-      <h1>FixTudo</h1>    
+      <h1>FixTudo</h1>
       <h2>Sua casa em boas mãos</h2>
       <p>Manutenção e cuidado com carinho</p>
-      
+
     </div>
     <div class="imagem-home">
       <img src="../assets/imagens/imagemhome.png" alt="">
@@ -31,17 +22,17 @@ import Footer from '@/assets/components/Footer.vue';
     <div class="sobrenos">
       <div ref="sectionToScroll">
         <h3>Sobre Nós</h3>
-        <p>
+        <p class="texto-sobrenos">
           Bem-vindo(a) à Fix Tudo, onde transformamos suas necessidades em
-          <hr>soluções práticas e
+          soluções práticas e
           personalizadas!
           Somos uma empresa dedicada a
-          <hr> conectar você com profissionais qualificados
+          conectar você com profissionais qualificados
           nas áreas de manutenção,
-          <hr> limpeza, cuidados pessoais e culinária.
+          limpeza, cuidados pessoais e culinária.
         </p>
-        <p>Nosso compromisso é com a excelência e a satisfação dos nossos
-          <hr> clientes.
+        <p class="texto-sobrenos">Nosso compromisso é com a excelência e a satisfação dos nossos
+          clientes.
         </p>
 
       </div>
@@ -137,10 +128,10 @@ import Footer from '@/assets/components/Footer.vue';
           <a href="#" class="service-link">→</a>
         </div>
       </div>
-      
-    <Footer></Footer>
 
-</div>
+      <Footer></Footer>
+
+    </div>
   </div>
 </template>
 
@@ -152,6 +143,11 @@ import Footer from '@/assets/components/Footer.vue';
 
 <style scoped>
 
+p.texto-sobrenos {
+  width: 50%;
+  margin: 0 auto;
+  
+}
 
 .services-container {
   text-align: center;
@@ -264,17 +260,17 @@ button {
 
 }
 
-.imagem-home img{
+.imagem-home img {
   height: 600px;
   width: 600px;
   margin-left: 899px;
   margin-bottom: 10px;
-  display: flex;  
+  display: flex;
 
 }
 
 
-.sobrenos {
+.sobrenos h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,7 +297,7 @@ button {
 
 }
 
-.intera{
+.intera {
   display: flex;
   height: 800px;
   align-items: center;
@@ -310,7 +306,7 @@ button {
   background-color: white;
 }
 
-.intera h2{
+.intera h2 {
   font-weight: bold;
 }
 
@@ -328,7 +324,7 @@ button {
   color: #00626d;
 }
 
-.left-side h4{
+.left-side h4 {
   letter-spacing: 7px;
   font-weight: 400;
 }
@@ -384,7 +380,3 @@ button {
   font-weight: 600;
 }
 </style>
-
-
-
-

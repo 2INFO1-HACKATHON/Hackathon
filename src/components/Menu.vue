@@ -12,7 +12,7 @@ function Dropdown() {
 </script>
 <template>
   <header>
-    <RouterLink to="/"><img src="../imagens/logo.png" alt="logo" /> </RouterLink>
+    <RouterLink to="/"><img src="../assets/imagens/logo.png" alt="logo" /> </RouterLink>
     <button>Sobre Nós</button>
     <button class="dropdown-button" @click="Dropdown">Serviços</button>
     <div v-if="open" class="dropdown-menu">

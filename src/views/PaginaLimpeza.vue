@@ -1,7 +1,7 @@
 
 <script setup>
-import Menu from '@/assets/components/Menu.vue';
-import Footer from '@/assets/components/Footer.vue';
+import Menu from '@/components/Menu.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 <template>
     <div class="container">
